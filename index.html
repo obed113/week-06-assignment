@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101715">
+    <meta
+      name="description"
+      content="A personal online business card."
+    >
+    <title>Thapa obed | Business Card</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="card-wrapper">
+      <article class="card" aria-labelledby="person-name">
+        <header class="card-header">
+          <div class="avatar-ring" aria-hidden="true">
+            <span class="avatar-initials">YN</span>
+          </div>
+          <h1 class="name" id="person-name"> Thapa obed</h1>
+          
+
+          <p class="role">Student</p>
+          <span class="badge">Seeking for opportunities</span>
+        </header>
+
+        <div class="card-content">
+          <p class="bio">
+            Hello my name is Thapa obed. I am a student and I am passionate about technology and programming. I enjoy learning new skills and working on projects that challenge me to grow as a developer.
+          </p>
+
+          <section class="skills-grid" aria-label="Skills">
+            <span class="skill-tag">python</span>
+            <span class="skill-tag">web development</span>
+            <span class="skill-tag">data analysis</span>
+            <span class="skill-tag">problem solving</span>
+          </section>
+
+          <nav class="contact-section" aria-label="Contact">
+            <a class="contact-item" href="obedthapa099@gmail.com">
+              <span class="icon" aria-hidden="true">✉</span>
+              <span class="text">obedthapa099@gmail.com</span>
+            </a>
+            <a class="contact-item" href="https://www.github.com/obed113">
+              <span class="icon" aria-hidden="true">in</span>
+              <span class="text">github.com/obed113</span>
+            </a>
+            <a class="contact-item" href="https://obedthapa.com">
+              <span class="icon" aria-hidden="true">↗</span>
+              <span class="text">obedthapa.com</span>
+            </a>
+          </nav>
+        </div>
+
+        <footer class="card-footer">
+          <p>© <span id="year"></span> Thapa obed</p>
+        </footer>
+      </article>
+    </main>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
