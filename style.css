@@ -149,8 +149,33 @@ body {
   transition: color 150ms ease, background-color 150ms ease;
 }
 
+.action-buttons {
+  margin: 0 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
 .button {
-  margin-right: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 8px 16px;
+  border: 1px solid rgb(182 237 114 / 64%);
+  border-radius: 6px;
+  color: #101715;
+  background: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 150ms ease, transform 150ms ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  background: #c8f58f;
+  transform: translateY(-1px);
 }
 
 a.contact-item:hover,
